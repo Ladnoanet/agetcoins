@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТАПАТЬ АГЕТА</title>
+    <style>
+        body {
+            background-color: rgb(13, 13, 24);
+            text-align: center;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        img {
+            width: 80%;
+            margin-top: 10px;
+            border-radius: 50%;
+            border: 5px solid rgb(243, 168, 30);
+            transition: transform 0.2s;
+        }
+
+        img:active {
+            transform: scale(0.9);
+        }
+
+        .schet {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>ТАПАЙ ТАПАЙ!</h1>
+    <h3>Тапни 100 раз!</h3>
+    <h3>1 AgetCoin = 1 порно-рисунок</h3>
+    <img src="агета.jpg" alt="" onclick="incrementCounter()">
+    <h1 class="schet" id="counter">0</h1>
+
+    <script>
+        let count = 0;
+
+        function incrementCounter() {
+            count++;
+            document.getElementById('counter').innerText = count;
+            if (count === 100) {
+                window.location.href = 'vivod.html';
+            }
+        }
+    </script>
+</body>
+</html>
